@@ -1,0 +1,132 @@
+
+	body {
+	color: #000000;
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif, helvetica, arial;
+}
+.navbar {
+	background-color: black;
+	overflow: hidden;
+}
+.navbar a {
+	float: right;
+	background-color: black;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	box-shadow: inset 0px 0px 0px 0px white;
+	transition: .25s;
+}
+.navbar .logo {
+	float: left;
+	background-color: black;
+	color: #ffffff;
+	font-size: 26px;
+	text-align: center;
+	padding: 10px 14px 0px 14px;
+	font-weight: 300;
+	text-decoration: none;
+	font-family: 'Roboto', monospace, arial;
+}
+.navbar a:hover, .navbar a:focus {
+	background-color: white;
+	color: black;
+}
+.content {
+	text-align: center;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.context {
+	left:-999px;
+	opacity: 0.0;
+	top: auto;
+	position: absolute;
+	z-index:-999;
+}
+.context:active, .context:focus {
+	left: auto;
+	top: auto;
+	text-align:center;
+	transition: .25s;
+	z-index: 999;
+	background-color: white;
+	padding: 5px;
+	border: 2px solid #cacaca;
+	opacity: 1.0;
+}
+h1 {
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif, arial;
+}
+.tabs .card:hover {
+	box-shadow: -2px -2px 0px 0px #00ffcc, 2px 2px 0px 0px #00ffcc, 2px -2px 0px 0px #00ffcc, -2px 2px 0px 0px #00ffcc;
+}
+@media only screen and (max-width: 500px) {
+	.navbar a {
+		float: none;
+		display: block;
+	}
+	.navbar .logo {
+		float: none;
+		display: block;
+		padding-bottom: 5px;
+	}
+	.navbar .dropdown {
+		float: none;
+	}
+	.navbar {
+		float: none;
+	}
+	.content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+td, th {
+	border: 1px solid #dddddd;
+	padding: 10px;
+}
+h1 a {
+	color: #000000;
+	text-decoration: none;
+}
+.sidebar a {
+	color: #000000;
+}
+.readmore {
+	display: block;
+	background-color: #ffffff;
+	padding: 5px;
+	border-radius: 10px;
+	padding: 10px;
+	border: 1px solid #cacaca;
+	color: #505050;
+	text-decoration: none;
+}
+.readmore:hover {
+	background-color: #eaeaea;
+}
+ul.children {
+	padding: 0px;
+	margin: 0px;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.p1 {
+  max-width: 550px;
+  min-width: 100px;
+}
